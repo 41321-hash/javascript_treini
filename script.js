@@ -5,7 +5,9 @@ let frases = [
     "Ás vazes é melhor ter paciência do que agir impulsivamente - Zelda BOTW",
     "Goool - FC 2026",
     "Não importa o quão  escura seja a noite, o amanhã sempre chega - Final Fantasy x",
-    "Espaço. Espaço. Eu tô no ESPAAAAÇOO - Portal 2"
+    "Espaço. Espaço. Eu tô no ESPAAAAÇOO - Portal 2",
+    "Showtime!", "Magic!", "Fireball! - clach royle",
+    "New high score! (Nova pontuação máxima), Player one, get ready! (Jogador um, prepare-se), Insert coin (Inserir moeda), You lose (Você perdeu) e Game over -  8-bit brawl stars "
 ];
 
 let cliques = 0;
@@ -15,10 +17,9 @@ function gerarFrases(){
 
     let frasesEscolhida = frases[indice];
 
-    cliques - cliques+1;
+    cliques = cliques+1;
 
-    document.getElementById("frase").innerText =
-    frasesEscolhida;
+    document.getElementById("frase").innerText = frasesEscolhida;
 
-    document.getElementById("contador").innerText = "Frases geradas: "+cliques;
+    document.getElementById("contador").innerText = "Frases geradas: " + cliques;
 }
